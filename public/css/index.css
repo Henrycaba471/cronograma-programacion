@@ -97,7 +97,7 @@ caption{
 }
 
 .btn{
-    position: absolute;
+    position: fixed;
     bottom: 5px;
     right: 5px;
 }
@@ -119,7 +119,7 @@ caption{
 }
 
 .notes{
-    position: absolute;
+    position: fixed;
     left: -33px;
     bottom: 65px;
 }
