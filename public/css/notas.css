@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik+Doodle+Shadow&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #FAEF9B;
+    overflow: hidden;
+}
+
+.content{
+    min-height: calc(100vh );
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.aside-nav{
+    max-height: 100vh;
+    overflow: auto;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #85828241;
+}
+.aside-nav .logo{
+    text-align: center;
+    padding: 10px;
+}
+
+.aside-nav .logo h1{
+    margin-top: -15px;
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', system-ui, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.aside-nav .logo h1 strong {
+    color: #45B3D1;
+}
+
+.aside-nav .logo span{
+    font-family: 'Dancing Script', cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.aside-nav .nav{
+    padding: 5px;
+}
+.aside-nav .nav a{
+    line-height: 2;
+    text-decoration: none;
+    border: 2px solid #45B3D1;
+    padding: 4px 8px;
+    margin: 7px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+.aside-nav .nav a:hover{
+    border: 2px solid #070707c0;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    box-shadow: rgba(95, 97, 97, 0.877) 0px 5px 15px 0px;
+    transform: rotate(-2deg);
+    color: #000000;
+    overflow: auto;
+}
+
+.notes{
+    height: 100vh;
+    overflow: auto;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    text-align: center;
+    padding: 10px;
+}
+.notes .header-main{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.notes .header-main .search{
+    display: flex;
+    justify-content: center;
+}
+.notes .header-main .search input{
+    border: 1px solid #45B3D1;
+    padding: 4px 7px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+    background-color: #ffffff62;
+    font-size: 20px;
+}
+.notes .header-main .search button{
+    border: 1px solid #45B3D1;
+    border-left: none;
+    padding: 4px 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+    background-color: #ffffff62;
+    font-size: 20px;
+}
+.notes .header-main .search button:hover{
+    cursor: pointer;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.notes .header-main .search button img:hover{
+    transform: rotate(-90deg);
+    transition: all .3s ease-out;
+}
+.notes .title-notas{
+    font-size: 17px;
+    font-family: 'Rubik Doodle Shadow', system-ui, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 7px 5px #45B3D1;
+    padding: 20px 0;
+}
+.notes .content-notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.notes .content-notes .note{
+    max-width: 200px;
+    padding: 5px 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.footer{
+    border: 2px solid green;
+    grid-column: 1/-1;
+}
+
+@media  only screen and (max-width: 700px){
+    .content{
+        min-height: calc(100vh );
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+    }
+}
+@media  only screen and (max-width: 500px){
+    body{
+        overflow: auto;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .aside-nav{
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid #acabac;
+    }
+    .notes{
+        background-color: #D9AFD9;
+        background-image: linear-gradient(180deg, #D9AFD9 0%, #97D9E1 100%);
+        text-align: center;
+        padding: 10px;
+    }
+}
