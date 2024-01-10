@@ -148,7 +148,8 @@ body{
 }
 .notes .content-notes .note img{
     border-radius: 50%;
-    border: 1px solid #303030;
+    border: 2px solid #30303069;
+    padding: 3px;
 }
 .notes .content-notes .note p{
     font-size: 17px;
@@ -181,6 +182,7 @@ body{
     background-color: #85ffbe8f;
     background-image: linear-gradient(45deg, #85ffbe 0%, #fffb7d46 100%);
     transition: all 0.2s ease-out;
+    align-self: baseline;
 }
 .notes .content-notes .note a:hover{
     background-color: #ffd700;

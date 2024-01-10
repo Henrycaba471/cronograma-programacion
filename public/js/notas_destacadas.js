@@ -12,7 +12,7 @@ fetch('public/js/db.json')
             // Construir el contenido HTML de la nota
             const noteHTML = `
                 <h4 class="note-title">${nota.title}</h4>
-                <img src="${nota.img}" alt="logo-${nota.title}" width="30">
+                <img src="${nota.img}" alt="logo-${nota.title}" width="45">
                 <p>
                     <strong>${nota.tema}:</strong>
                     ${nota.description}

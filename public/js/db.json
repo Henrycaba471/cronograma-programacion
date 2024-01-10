@@ -42,10 +42,10 @@
         },
         {
             "title": "React Js",
-            "img": "public/img/js.png",
-            "tema": "Las variables",
-            "description": "Una variable es un nombre que hace referencia a un espacio en la memoria del programa donde se guarda un dato. Básicamente una variable está formada por un espacio en la memoria",
-            "detail": "//Almaceno en la variable 'miNumeroUno' el valor 3 let miNumeroUno = 3 //Almaceno en la variable 'miNumeroDos' el valor 2 let miNumeroDos = 2 //Almaceno en la variable 'resultado' el resultado de la suma let resultado = miNumeroUno + miNumeroDos",
+            "img": "public/img/reactjs-svgrepo-com.svg",
+            "tema": "Estructura del Estado Inmutable",
+            "description": "React se beneficia de un manejo adecuado del estado, y una práctica común es mantener el estado inmutable. Al manipular el estado de manera inmutable, puedes evitar errores inesperados y ayudar a React a optimizar las actualizaciones del DOM de manera más eficiente",
+            "detail": "// Incorrecto<br>//this.setState({ property: 'nuevo valor' });<br>// Correcto <br>this.setState((prevState) => ({property: 'nuevo valor',}));",
             "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"
         }
     ],
