@@ -49,12 +49,64 @@
             "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"
         }
     ],
-    "notasJS": {
-
-    },
-    "notasJava": {},
-    "notasNode": {},
-    "notasReact": {},
-    "notasCSS": {},
-    "notasHTML": {}
+    "notasJS": [
+        {
+            "title": "Javascript",
+            "img": "public/img/js.png",
+            "tema": "Las variables",
+            "description": "Una variable es un nombre que hace referencia a un espacio en la memoria del programa donde se guarda un dato. Básicamente una variable está formada por un espacio en la memoria",
+            "detail": "//Almaceno en la variable <br> miNumeroUno' el valor 3<br> let miNumeroUno = 3 <br> //Almaceno en la variable 'miNumeroDos' el valor 2<br> let miNumeroDos = 2<br> Almaceno en la variable 'resultado' el resultado de la suma<br> let resultado = miNumeroUno + miNumeroDos",
+            "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"
+        }
+    ],
+    "notasJava": [
+        {
+            "title": "Java",
+            "img": "public/img/java.png",
+            "tema": "Portabilidad",
+            "description": "La máquina virtual de Java (JVM) permite que el código Java sea ejecutable en diferentes plataformas sin modificaciones. Esto se logra al compilar el código fuente en bytecode, que es interpretado por la JVM. <br>Supongamos que tienes el siguiente código Java, Compila el código fuente HolaMundo.java usando el compilador Java (javac), Esto generará un archivo bytecode llamado HolaMundo.class, Puedes llevar el archivo HolaMundo.class a cualquier máquina que tenga instalada la JVM. No necesitas recompilar el código fuente en cada máquina cualquier máquina con la JVM instalada, puedes ejecutar el programa utilizando el intérprete de Java(java)",
+            "detail": "public class HolaMundo {<br>public static void main(String[] args) {<br>System.out.println('¡Hola, mundo!');<br>}<br>}<br>javac HolaMundo.java <br> java HolaMundo",
+            "ref": "https://leojimzdev.com/caracteristicas-del-lenguaje-java-todo-lo-que-necesitas-saber/#:~:text=Una%20de%20las%20principales%20ventajas%20de%20Java%20es,necesidad%20de%20realizar%20modificaciones%20en%20el%20c%C3%B3digo%20fuente."
+        }
+    ],
+    "notasNode": [
+        {
+            "title": "Node Js",
+            "img": "public/img/nodo-js.png",
+            "tema": "Manejo asíncrono",
+            "description": "Node.js está diseñado para ser no bloqueante y utiliza un modelo de manejo asíncrono basado en eventos. Esto permite manejar un gran número de conexiones simultáneas sin esperar a que una operación se complete antes de pasar a la siguiente.",
+            "detail": "const server = http.createServer((req, res) => { <br>// Configura la respuesta del servidor con un código de estado y tipo de contenido <br> res.writeHead(200, {'Content-Type': 'text/plain'}); <br>// Escribe el mensaje de respuesta res.end('¡Hola, mundo!\n'); }); <br>// Escucha en el puerto 3000 y la dirección '127.0.0.1' (localhost)<br> const PORT = 3000 <br>const HOST = '127.0.0.1'; <br>server.listen(PORT, HOST, () => { console.log(`Servidor escuchando en http://${HOST}:${PORT}/`); });",
+            "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Introducing"
+        }
+    ],
+    "notasReact": [
+        {
+            "title": "React Js",
+            "img": "public/img/reactjs-svgrepo-com.svg",
+            "tema": "Estructura del Estado Inmutable",
+            "description": "React se beneficia de un manejo adecuado del estado, y una práctica común es mantener el estado inmutable. Al manipular el estado de manera inmutable, puedes evitar errores inesperados y ayudar a React a optimizar las actualizaciones del DOM de manera más eficiente",
+            "detail": "// Incorrecto<br>//this.setState({ property: 'nuevo valor' });<br>// Correcto <br>this.setState((prevState) => ({property: 'nuevo valor',}));",
+            "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"
+        }
+    ],
+    "notasCSS": [
+        {
+            "title": "CSS",
+            "img": "public/img/css-3.png",
+            "tema": "Propiedades y Valores",
+            "description": "Las reglas CSS consisten en propiedades y valores. Las propiedades son atributos que deseas cambiar (como color o font-size), y los valores son los ajustes específicos que les das.",
+            "detail": "div{<br>color: #000;<br>font-size: 20px;<br>background-color: #639;<br>display: block;<br>border: 1px solid #987;<br>}",
+            "ref": "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables"
+        }
+    ],
+    "notasHTML": [
+        {
+            "title": "HTML",
+            "img": "public/img/html-5.png",
+            "tema": "Almacenamiento Local y de Sesión",
+            "description": "HTML5 proporciona el almacenamiento local y de sesión a través de localStorage y sessionStorage. Esto permite a las aplicaciones web almacenar datos de manera persistente en el navegador del usuario, lo que es útil para la creación de aplicaciones más rápidas y eficientes.",
+            "detail": "",
+            "ref": "https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API"
+        }
+    ]
 }
