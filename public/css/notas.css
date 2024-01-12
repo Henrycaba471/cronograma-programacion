@@ -141,7 +141,10 @@ body{
 .notes .content-notes .note{
     max-width: 320px;
     padding: 5px 0;
-    border: 2px solid #1e836abe;
+    border-right: 1px solid #1e836abe;
+    border-top: 1px solid #1e836abe;
+    border-bottom: 2px solid #1e836abe;
+    border-left: 3px solid #1e836abe;
     border-radius: 7px;
     background-color: #3d3d3b31;
 }
